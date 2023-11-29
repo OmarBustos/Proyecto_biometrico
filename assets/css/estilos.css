@@ -1,0 +1,132 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+    font-family: Verdana, sans-serif;
+    list-style: none !important;
+    text-decoration: none !important;
+}
+
+/*Colores*/
+:root{
+    --blanco: #e0e0e0;
+    --azul-opacidad:  #184463;
+    --bg-menu: #003053;
+    --bg-body: #c7e1ff;
+}
+
+body{
+    font-family: Verdana, sans-serif;
+    display: flex;
+}
+
+.iconos{
+    color: var(--blanco);
+}
+
+/*MENU LATERAL*/
+.menu-dashboard{
+    max-width: 110px;
+    height: 100vh;
+    background-color: var(--bg-menu);
+    padding: 20px;
+    transition: max-width.3s ease;
+    cursor: pointer;
+    color: var(--blanco);
+}
+
+.menu-dashboard .top-menu .logo{
+    display: flex;
+}
+
+.top-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-menu .logo{
+    display: flex;
+    align-items: center;
+}
+
+.top-menu .logo i{
+    width: 40px;
+    transition: width.3s ease;
+}
+
+.top-menu .logo span{
+    font-size: 15px;
+    margin-left: 20px;
+    display: none;
+}
+
+.top-menu .toggle{
+    width: 30px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-menu .toggle i{
+    font-size: 35px;
+}
+
+.menu .enlace{
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    padding: 20px 0 20px 17px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 16px;
+    transition: all .3s ease;
+    color: var(--blanco);
+}
+
+.menu .enlace:hover{
+    background-color: var(--azul-opacidad);
+}
+
+.menu .enlace i{
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.menu .enlace span{
+    opacity: 0;
+    transition: opacity.3s ease;
+}
+
+.menu-dashboard.open{
+    max-width: 260px;
+}
+
+.menu-dashboard.open .top-menu .logo span{
+    display: flex;
+}
+
+.menu-dashboard.open .menu .enlace{
+    display: block;
+}
+
+.menu-dashboard.open .menu .enlace{
+    padding: 20px;
+}
+
+.menu-dashboard.open .menu .enlace span{
+    opacity: 1;
+}
+
+
+/*MEDIA QUERY*/
+
+@media(max-width: 800px) {
+    
+}
+
+
+
